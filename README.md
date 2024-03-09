@@ -18,8 +18,7 @@ heritage_site(#     region TEXT, region_id INTEGER, iso TEXT, iso_id INTEGER);
 ## Raw Data injestion
 
 ```
-heritage_site=# \copy unesco_raw(name,description,justification,year,longitude,latitude,area_hectares,category,state,region,iso) FROM 'C:\Users\abraa\Documents\Po
-stgres csv files\whc-sites-2018-small.csv' WITH DELIMITER ',' CSV HEADER;
+heritage_site=# \copy unesco_raw(name,description,justification,year,longitude,latitude,area_hectares,category,state,region,iso) FROM 'whc-sites-2018-small.csv' WITH DELIMITER ',' CSV HEADER;
 ```
 ![image](https://github.com/SkywalkerZ/heritage_site_normalization/assets/6307592/ee2cca92-157d-4d45-8432-c80f35757b1f)
 
